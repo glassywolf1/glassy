@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(50, 55, 56);
+  }
+  
+  h1 {
+    color: rgb(153, 4, 4);
+    text-align: center;
+    size: 500px;
+  }
+  
+  p {
+    font-size: 130px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  a {
+    font-family: cursive;
+  }
+
+  link {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    position: sticky;
+    position: -webkit-sticky;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #5f04aa;
+    color: rgb(255, 255, 255);
+  }
+  
+  .topnav a.active {
+    background-color: #5f04aa;
+    color: rgb(139, 3, 133);
+  }
+
+  form {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5f04aa;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5f04aa;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d027f;
+}

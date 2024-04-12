@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassyWolf's Live Counter</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+ </head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">SUB COUNT</a>
+        <a href="download.html">DOWNLOAD</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    <center>
+    <img src="subtext.png" alt="sub_logo">
+    <div style="font-family: cursive; font-size: 1030%;" id="subscriberCount">LOADING...</div>
+     <iframe width="520" height="313"
+src ="https://www.youtube.com/embed/PbQLdX9ImV0?si=nLDVhKFvrdbHawPl" style="align-self: center;">
+</iframe>
+<iframe width="520" height="313"
+src ="https://www.youtube.com/embed/R9XZjmwwQ-E?si=iqjKAUmvSfIaqR2V" style="align-self: center;">
+</iframe>
+<br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.youtube.com/@glassywolf" class="fa fa-youtube-play" style="font-size:45px"></a>
+<a href="https://www.instagram.com/glassywolf/" class="fa fa-instagram" style="font-size:45px"></a>
+</center>
+    <script>
+    
+    const APIKey = 'AIzaSyB70afjtwCbmrx-80O1uCfB3gFyykf17aQ';
+    const Userid = 'UCfFx6PvEmjpOzAXsfd8l1Wg';
+    const subscriberCount= document.getElementById('subscriberCount');
+   
+    let getdata = () => {
+        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${Userid}&key=${APIKey}`)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            console.log(data);
+            subscriberCount.innerHTML = data["items"][0].statistics.subscriberCount;
+            
+        })
+    }
+   getdata();
+    </script>
+</body>
+</html>
